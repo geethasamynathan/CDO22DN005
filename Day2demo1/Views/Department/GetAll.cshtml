@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "GetAll";
+}
+
+<h2>GetAll</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+
+
+    @foreach (var item in ViewBag.alldepts)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Location</td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Day2demo1.Models.Department>
+@{
+    ViewBag.Title = "GetAllDepartments";
+}
+
+<h2>GetAllDepartments</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Location</th>
+    </tr>
+    </thead>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Location</td>
+        </tr>
+    }
+
+</table>
+
