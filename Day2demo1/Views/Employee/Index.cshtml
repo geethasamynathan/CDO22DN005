@@ -1,0 +1,26 @@
+﻿@model Day2demo1.ViewModels.DepartmentEmployeeViewModel
+@{
+    ViewBag.Title = "Index";
+   
+}
+
+<h2>   @Model.Title </h2>
+
+<table class="table table-responsive">
+    <tr>
+        <th> Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Salary</th>
+        <th>DepartmentName</th>
+    </tr>
+     <tr>
+            <td> @Model.Employee.Id</td>
+            <td>@Model.Employee.Name</td>
+            <td>@Model.Employee.Gender</td>
+            <td> @Model.Employee.Salary</td>
+            <td>@Model.Department.Name</td>
+        </tr>
+  
+</table>
+
